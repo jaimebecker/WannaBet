@@ -1,0 +1,6 @@
+framework module Pods_WannaBetiOS {
+  umbrella header "Pods-WannaBetiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
