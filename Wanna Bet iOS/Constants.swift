@@ -11,5 +11,18 @@ struct K{
         static let mainToBet = "MainToBet"
         static let loginToMain = "LoginToMain"
         static let registerToMain = "RegisterToMain"
+        static let mainToAddBet = "mainToAddBet"
+    }
+    
+    struct FStore{
+        static let collectionName = "bets"
+        static let userField = "user"
+        static let betTitleField = "betTitle"
+        static let betQuestionField = "betQuestion"
+        static let betUserChoiceField = "usersChoice"
+    }
+    
+    struct Table{
+        static let cell = "ReusableCell"
     }
 }

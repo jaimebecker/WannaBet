@@ -19,8 +19,9 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		79375361890E6A2144800E3E /* Pods_WannaBetiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71468305C2540C150DD0FE55 /* Pods_WannaBetiOS.framework */; };
 		D20D416625CCDFEF00C0833E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D416525CCDFEF00C0833E /* Constants.swift */; };
-		D222757625CA6A37007A42F3 /* BetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222757525CA6A37007A42F3 /* BetViewController.swift */; };
 		D2B073FD25CCF68D00F56517 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2B073FC25CCF68D00F56517 /* GoogleService-Info.plist */; };
+		D2B59C9A25DF3C2C00D7A36D /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B59C9925DF3C2C00D7A36D /* Bet.swift */; };
+		D2CF1D7D25D23436009C4C88 /* AddBetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF1D7C25D23436009C4C88 /* AddBetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,9 @@
 		71468305C2540C150DD0FE55 /* Pods_WannaBetiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WannaBetiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		781BF6625DAC5AF371976765 /* Pods-WannaBetiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WannaBetiOS.release.xcconfig"; path = "Target Support Files/Pods-WannaBetiOS/Pods-WannaBetiOS.release.xcconfig"; sourceTree = "<group>"; };
 		D20D416525CCDFEF00C0833E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D222757525CA6A37007A42F3 /* BetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetViewController.swift; sourceTree = "<group>"; };
 		D2B073FC25CCF68D00F56517 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2B59C9925DF3C2C00D7A36D /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bet.swift; path = "Wanna Bet iOS/Controllers/Bet.swift"; sourceTree = SOURCE_ROOT; };
+		D2CF1D7C25D23436009C4C88 /* AddBetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,7 @@
 				0B62818C235DF00B00E35CAF /* RegisterViewController.swift */,
 				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
 				0B628190235DF01B00E35CAF /* MainViewController.swift */,
-				D222757525CA6A37007A42F3 /* BetViewController.swift */,
+				D2CF1D7C25D23436009C4C88 /* AddBetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D2B59C9925DF3C2C00D7A36D /* Bet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,13 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF1D7D25D23436009C4C88 /* AddBetViewController.swift in Sources */,
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
-				D222757625CA6A37007A42F3 /* BetViewController.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				0B628191235DF01B00E35CAF /* MainViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				D2B59C9A25DF3C2C00D7A36D /* Bet.swift in Sources */,
 				D20D416625CCDFEF00C0833E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B44SFZXYBJ;
-				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
+				INFOPLIST_FILE = "Wanna Bet iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B44SFZXYBJ;
-				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
+				INFOPLIST_FILE = "Wanna Bet iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
