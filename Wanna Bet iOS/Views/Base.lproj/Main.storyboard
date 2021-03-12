@@ -368,7 +368,7 @@
                         <segue destination="lwd-AH-u8E" kind="relationship" relationship="viewControllers" id="8mt-Fa-KbQ"/>
                         <segue destination="Krg-wO-6wf" kind="relationship" relationship="viewControllers" id="OUL-bw-0zm"/>
                         <segue destination="rxv-J8-40F" kind="relationship" relationship="viewControllers" id="zmy-kr-ySM"/>
-                        <segue destination="rim-AP-HKR" kind="relationship" relationship="viewControllers" id="4Ol-Wx-2By"/>
+                        <segue destination="sQx-rC-CqI" kind="relationship" relationship="viewControllers" id="Bos-ys-PTM"/>
                         <segue destination="t5Q-LK-OIb" kind="relationship" relationship="viewControllers" id="Yil-aU-UF1"/>
                     </connections>
                 </tabBarController>
@@ -420,6 +420,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFP-qE-CyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3835" y="-1304"/>
+        </scene>
+        <!--Add Bet-->
+        <scene sceneID="wOm-gj-OQY">
+            <objects>
+                <viewController id="sQx-rC-CqI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1kC-Tv-cpc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4On-Qd-Odg">
+                                <rect key="frame" x="87" y="164" width="240" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Head-to-Head Bet" backgroundImage="label_box"/>
+                                <connections>
+                                    <segue destination="rim-AP-HKR" kind="show" id="Kgw-PU-5F6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W5-nk-Gkx">
+                                <rect key="frame" x="87" y="344" width="240" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Group Bet" backgroundImage="label_box">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lix-JZ-Qei">
+                                <rect key="frame" x="87" y="514" width="240" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Public Bet" backgroundImage="label_box">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sda-Hc-mcw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Bet" image="plus" catalog="system" id="8XS-vh-BkA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Sk-IK-UES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3834.7826086956525" y="786.83035714285711"/>
         </scene>
         <!--Create Bet-->
         <scene sceneID="XI7-Se-X81">
@@ -477,7 +518,6 @@
                         <viewLayoutGuide key="safeArea" id="8HZ-QJ-3iH"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Bet" image="plus" catalog="system" id="til-75-isv"/>
                     <navigationItem key="navigationItem" title="Create Bet" id="fgm-wv-8MJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -487,7 +527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIV-94-xZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3835" y="773"/>
+            <point key="canvasLocation" x="5004" y="787"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CaU-Pb-asd">
@@ -514,6 +554,7 @@
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="label_box" width="341" height="170.5"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
