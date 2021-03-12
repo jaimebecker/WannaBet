@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
                 if let e = error{
                     print(e.localizedDescription) //TODO: fix to popup
                 }else{
-                    self.performSegue(withIdentifier: K.Segues.loginToMain, sender: self)
+                    self.performSegue(withIdentifier: "LoginToTabController", sender: self)
                 }
             }
         }
