@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController {
                     print(e.localizedDescription) // TODO: fix with popup
                 }else{
                     // Navigate to "MAIN"
-                    self.performSegue(withIdentifier: K.Segues.registerToMain, sender: self)
+                    self.performSegue(withIdentifier: "RegisterToMain", sender: self)
                 }
             }
         }
